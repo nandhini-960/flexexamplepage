@@ -12,6 +12,62 @@
     margin:0;
     }
 
+    header{
+        padding:60px;
+        text-align:center;
+        background:lightskyblue;
+        color:white;
+    }
+
+.navigation{
+    display:flex;
+    background-color:orange;
+}
+
+.navigation a{
+    color:white;
+    padding:14px 20px;
+    text-decoration:none;
+    text-align:center;
+}
+.navigation a:hover{
+    background-color:bisque;
+    color:black;
+}
+
+.flex-container{
+    display:flex;
+flex-wrap:wrap;
+}
+
+.side{
+    flex:30%;
+    background-color:grey;
+    padding:20px;
+}
+
+.main{flex:80;
+background-color:white;
+padding:20px;}
+
+.dummyimg{
+    background-color:darkgrey;
+    width:100%;
+    padding:20px;
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    background:green;
+}
+
+@media screen and (max-width:700px){
+    .flex-container,.navbar{
+        flex-direction:column;
+    }
+}
+
 </style>    
 </head>
 <body>
@@ -33,9 +89,26 @@
 <div class="flex-container">
     <div class="side-content">
         <h2>About </h2>
-<h4>Profile</h4>
-
-    </div>
+        <h4>Profile</h4>
+        <div class="dummyimg" style="height:200px;">"Image"</div>
+    <p>some Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nulla vel placeat tempora minima neque ex voluptatem facilis laborum excepturi.</p>
+<h3>para para Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestias!</h3> 
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloribus quo maiores beatae in rerum.</p>   
+<div class="dummyimg" style="height:60px;">Image</div><br>
+<div class="dummyimg" style="height:60px;">Image</div><br>
+<div class="dummyimg" style="height:60px;">Image</div><br>
+<div class="main">
+    <h2>title here</h2>
+    <h5>title description</h5>
+    <div class="dummyimg" style="height:200px;">Image</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nobis cumque fugit commodi sint in atque excepturi? Dolores nihil facere eius sint, quaerat quis ducimus cumque distinctio culpa accusantium? Id eveniet harum earum quas veniam saepe, est sunt aperiam iste, ad, eius beatae doloremque? Omnis, quae possimus! Perferendis, eius tempora.</p>
+</div>
 </div>
 
+<footer>
+    <h2>Footer</h2>
+</footer>
+
 </body>
+</html>
